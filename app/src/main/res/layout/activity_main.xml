@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="60dp"
+                android:text="COSTO POR LLAMADA"
+                android:textColor="#070907"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txNombreContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="30dp"
+                android:hint="Nombre del Contacto"
+                android:minHeight="48dp"
+                android:textColorHint="#070606" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                app:startIconDrawable="@drawable/ic_horas">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txHorasLlamada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingresa las Horas de llamada"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                app:startIconDrawable="@drawable/ic_minutos">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txMinutosLlamada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingresa los Minutos de llamada"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                app:startIconDrawable="@drawable/ic_dinero">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txCostoMinutoLlamada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="¿Cuál es el costo por minutos de llamada?"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginRight="100dp"
+                style="?attr/materialButtonOutlinedStyle"
+                app:strokeColor="@color/design_default_color_on_primary"
+                app:cornerRadius="500dp"
+                android:backgroundTint="#00BCD4"
+                android:color="#80FF00"
+                android:text="CALCULAR COSTO " />
+
+            <Button
+                android:id="@+id/buttonNuevo"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginRight="100dp"
+                android:backgroundTint="#00BCD4"
+                android:color="#80FF00"
+                android:text="NUEVO"
+                app:cornerRadius="500dp"
+                app:strokeColor="@color/design_default_color_on_primary" />
+
+            <Button
+                android:id="@+id/buttonSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginRight="100dp"
+                style="?attr/materialButtonOutlinedStyle"
+                app:strokeColor="@color/design_default_color_on_primary"
+                app:cornerRadius="500dp"
+                android:backgroundTint="#00BCD4"
+                android:color="#80FF00"
+                android:text="SALIR" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
